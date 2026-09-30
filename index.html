@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grammar Lab — тесты по английскому</title>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f4fb;--fg:#3d3b4f;--mut:#7a7790;--card:#fff;--br:#e6dff0;--ac:#6c63be;--acf:#fff;--ok:#2f7d52;--okb:#e2f5ea;--no:#b4433d;--nob:#fde9e7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#211e2e;--fg:#ece9f5;--mut:#aaa6bf;--card:#2b2740;--br:#403b59;--ac:#b9b1f2;--acf:#22203a;--ok:#8fe0b0;--okb:#233b2f;--no:#ffb3ab;--nob:#432a2e;}}
+:root[data-theme="dark"]{--bg:#211e2e;--fg:#ece9f5;--mut:#aaa6bf;--card:#2b2740;--br:#403b59;--ac:#b9b1f2;--acf:#22203a;--ok:#8fe0b0;--okb:#233b2f;--no:#ffb3ab;--nob:#432a2e;}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Onest,system-ui,Arial,sans-serif;min-height:100%}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:2rem;font-weight:800;margin:8px 0 4px;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin:28px 0 10px}
+p.s{color:var(--mut);margin:0 0 18px}
+.g{display:grid;gap:12px}
+.c{background:var(--card);border:1px solid var(--br);border-radius:18px;padding:18px}
+.c h3{margin:0 0 4px;font-size:1.05rem}
+.c p{margin:0 0 12px;color:var(--mut);font-size:.92rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer;border-radius:14px;border:1px solid var(--ac);background:var(--ac);color:var(--acf);padding:9px 16px;font-weight:600}
+button.o{background:transparent;color:var(--fg);border-color:var(--br)}
+button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.bar{height:8px;background:var(--br);border-radius:4px;overflow:hidden;margin:10px 0 22px}
+.bar i{display:block;height:100%;background:var(--ac)}
+.q{font-size:1.3rem;font-weight:600;margin:0 0 18px;line-height:1.4}
+.bl{display:inline-block;min-width:70px;border-bottom:2px solid var(--ac)}
+.opt{display:block;width:100%;text-align:left;margin:0 0 10px;background:var(--card);color:var(--fg);border:1px solid var(--br);padding:13px 14px}
+.opt.ok{background:var(--okb);border-color:var(--ok);color:var(--ok)}
+.opt.no{background:var(--nob);border-color:var(--no);color:var(--no)}
+.big{font-size:3rem;font-weight:800;margin:0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--br);white-space:nowrap}
+.m{background:var(--nob);border-radius:14px;padding:10px 12px;margin:0 0 8px;font-size:.93rem}
+.m b{color:var(--ok)}
+.st{display:flex;gap:10px;flex-wrap:wrap}.st .c{flex:1;min-width:120px;text-align:center}.st b{font-size:1.6rem;display:block}
+.in{width:100%;font:inherit;padding:12px;border:1px solid var(--br);border-radius:14px;background:var(--card);color:var(--fg)}.in:focus-visible{outline:3px solid var(--ac);outline-offset:2px}label{font-weight:600;display:block;margin-bottom:6px}h1{min-width:0}
+.meme{max-width:400px;margin:0 auto 16px;border-radius:20px;overflow:hidden;border:1px solid var(--br)}.meme svg{display:block;width:100%;height:auto}
+</style></head><body><main id="app"></main>
+<script>
+const T=[
+{id:'pres',t:'Present Simple и Continuous',d:'Повседневные действия, действия сейчас, глаголы состояния, always doing, am/is/are being.',q:`Nurses ___ after patients in hospitals.|look|are looking|looks
+Please be quiet. I ___ to work.|'m trying|try|tries
+Water ___ at 100 degrees Celsius.|boils|is boiling|boil
+"Where's Mark?" "He ___ a shower."|'s having|has|have
+What time ___ the cafe open?|does|do|is
+Rice ___ in cold climates.|doesn't grow|don't grow|isn't growing
+I ___ up at 8 o'clock every morning.|get|am getting|gets
+Is your English ___ better?|getting|get|gets
+The population of the world ___ very fast.|is increasing|increases|increase
+I ___ to work by car.|always go|am always going|always goes
+Paul is never satisfied. He ___.|'s always complaining|always complaining|is always complain
+I ___ what you mean.|understand|am understanding|understands
+I'm hungry. I ___ something to eat.|want|am wanting|wants
+I ___ Mary is Canadian, but I'm not sure.|think|am thinking|thinks
+Nicky ___ of giving up her job.|is thinking|thinks|think
+This soup ___ very good.|doesn't taste|isn't tasting|don't taste
+Do you ___ that man over there?|see|be seeing|seeing
+Why ___ he so selfish today? He isn't usually like that.|is being|is|being
+Sam ___ ill.|is|is being|be
+Kate wants to work in Italy, so she ___ Italian.|'s learning|learns|learn
+I ___ I won't be late.|promise|am promising|promises
+My parents ___ in London. They have lived there all their lives.|live|are living|lives
+I ___ with some friends until I find a place of my own.|'m living|live|lives
+How often ___ you go to the dentist?|do|are|does
+Let's go out. It ___ any more.|isn't raining|doesn't rain|not raining
+Joe isn't lazy. He ___ hard most of the time.|works|is working|work
+How's your new job? ___ you enjoying it?|Are|Do|Is
+Robert usually ___ away two or three times a year.|goes|is going|go
+The company I work for ___ so well this year.|isn't doing|doesn't do|don't doing
+What ___ this word mean?|does|do|is
+I ___ hungry in the afternoon.|always get|am always getting|always gets
+She ___ tired in the morning.|usually feels|is usually feeling|usually feel
+The room ___. Let's open a window.|smells|is smelling|smell
+Excuse me, ___ you speak English?|do|are|does
+Listen to those people. What language ___ they speaking?|are|do|does
+The earth ___ round the sun.|goes|is going|go
+He ___ anything to help.|doesn't do|isn't do|don't do
+Every day the population ___ by about 200,000 people.|increases|is increasing|increase
+I don't like to take risks. I ___ a very careful person.|'m|'m being|be
+You ___ well today.|look|looks|are look`},
+{id:'perf',t:'Present Perfect и Perfect Continuous',d:'have done / have been doing, just/already/yet, gone/been, for/since, результат и процесс.',q:`Tom can't find his key. He ___ it.|has lost|is losing|have lost
+I can't remember his name. I ___ it.|'ve forgotten|forget|'m forgetting
+Sally is still here. She ___ out.|hasn't gone|hasn't went|haven't gone
+James is on holiday. He ___ to Italy.|has gone|has been|have gone
+Amy is back home now. She ___ to Italy.|has been|has gone|have been
+"Are you hungry?" "No, I ___ lunch."|'ve just had|just have|'m just having
+"Don't forget to pay the bill." "I ___ it."|'ve already paid|already pay|have already pay
+Has it stopped raining ___?|yet|already|just
+I've written the email, but I haven't sent it ___.|yet|already|just
+Have you ever ___ to China?|been|went|be
+We ___ never had a car.|'ve|'s|did
+It's the most boring movie I ___.|'ve ever seen|ever saw|'m ever seeing
+Have you heard anything from Ben ___?|recently|yesterday|last week
+There ___ any problems so far.|haven't been|weren't|hasn't be
+It ___ every day since I arrived.|'s rained|rained|rains
+We ___ each other for a long time.|haven't seen|didn't see|don't see
+I ___ four cups of coffee today.|'ve drunk|drank|drink
+Have you had a holiday ___?|this year|last year|in 2019
+It's the first time he ___ a car.|has driven|drives|drove
+This is the second time this ___.|has happened|happens|is happening
+Why are you out of breath? ___ running?|Have you been|Did you|Are you been
+Paul is very tired. He ___ hard.|'s been working|is been working|has been work
+It ___ for two hours and it is still raining.|'s been raining|rains|rained
+How long ___ English?|have you been learning|did you learn|are you learn
+Ben is watching TV. He ___ TV all day.|'s been watching|watched|is watching
+Chris ___ well recently.|hasn't been feeling|doesn't feel|didn't feeling
+Silvia ___ tennis since she was eight.|'s been playing|plays|played
+The ground is wet. It ___.|'s been raining|rains|is been raining
+There's paint on Kate's clothes. She ___ her bedroom.|has been painting|has painted|paints
+The bedroom was green. Now it is yellow. She ___ it.|has painted|has been painting|paints
+My hands are very dirty. I ___ my bike.|'ve been repairing|'ve repaired|repair
+My bike is OK again now. I ___ it.|'ve repaired|'ve been repairing|repair
+Somebody ___ all the chocolates. The box is empty.|has eaten|has been eating|eat
+Joe ___ too much recently. He should eat less.|has been eating|has eaten|eats
+How many pages of that book ___?|have you read|have you been reading|do you reading
+How long ___ that book?|have you been reading|have you read|do you read
+Amy ___ lots of emails this morning.|has sent|has been sending|sends
+They ___ tennis three times this week.|'ve played|'ve been playing|play
+I ___ about the problem for a long time.|'ve known|'ve been knowing|know
+How long ___ that camera?|have you had|have you been having|do you have`},
+{id:'past',t:'Past: Simple, Continuous, Perfect, Perfect Continuous',d:'Прошедшие времена: последовательность событий, процесс в прошлом, «раньше прошлого», длительность.',q:`Mozart ___ more than 600 pieces of music.|wrote|writes|writed
+We ___ Alice in town a few days ago.|saw|have seen|seen
+I ___ to the cinema three times last week.|went|gone|go
+It was cold, so I ___ the window.|shut|shutted|was shut
+I enjoyed the party. ___ you enjoy it?|Did|Do|Were
+I ___ anything because I didn't have any money.|didn't buy|not bought|didn't bought
+What ___ you do at the weekend?|did|do|have
+I ___ hungry, so I didn't eat anything.|wasn't|weren't|didn't
+They ___ able to come because they were busy.|weren't|wasn't|didn't
+___ the weather good when you were on holiday?|Was|Were|Did
+Laura ___ her exam because she studied very hard.|passed|has passed|pass
+The police ___ me on my way home last night.|stopped|stop|have stopped
+This time last year I ___ in Hong Kong.|was living|was live|am living
+What ___ you doing at 10 o'clock last night?|were|did|was
+Matt phoned while we ___ dinner.|were having|was having|have had
+It ___ when I got up.|was raining|rained|has rained
+I was walking along the road when I ___ Dan.|saw|was seeing|had seen
+When Karen arrived, we ___ dinner. (we had already started)|were having|had|have had
+We ___ home after the party last night. (all the way)|walked|were walking|walk
+We ___ each other well.|knew|were knowing|know
+Chris ___ to go home.|wanted|was wanting|wants
+When Sarah arrived, Paul ___ home. (he left earlier)|had gone|went|has gone
+Karen didn't come to the cinema. She ___ the movie.|'d already seen|has already seen|was already seeing
+When we got home, we found that somebody ___ into the flat.|had broken|has broken|breaked
+The people on the plane were nervous. They ___ before.|hadn't flown|haven't flown|didn't flown
+"Was Tom there?" "No, he ___ already."|'d left|left|has left
+Kate ___ just got home when I phoned.|had|has|was
+The house was dirty. They ___ it for weeks.|hadn't cleaned|haven't cleaned|didn't cleaned
+I wasn't sure who she was. I ___ her before.|'d seen|'ve seen|see
+We weren't hungry. We ___ just had lunch.|'d|'ve|were
+I ___ a lot of work yesterday.|did|have done|do
+I ___ a lot of work today. (today is not over)|'ve done|did|do
+I ___ here from 2010 to 2014. (not now)|worked|have worked|have been working
+Jack ___ in New York for ten years. Now he lives in Los Angeles.|lived|has lived|has been living
+He ___ at the company for five years when he decided to retire.|had been working|has been working|was worked
+She ___ for the exam for hours before the phone rang.|had been studying|has been studying|was study
+They ___ basketball all afternoon before it started raining.|had been playing|have been playing|were play
+He ___ on the project for weeks when he finally completed it.|had been working|has been working|had been work
+She ___ a book for hours before she fell asleep.|had been reading|has been reading|had been read
+Negative: They ___ tennis.|hadn't been playing|hadn't playing|weren't been playing`},
+{id:'fut',t:'Будущее: Present tenses и going to',d:'I am doing, I do (расписание), I’m going to do, was going to, «что-то вот-вот случится».',q:`What ___ you doing on Saturday evening?|are|do|will
+I ___ to the cinema. (already arranged)|'m going|go|goes
+What time ___ Katherine arriving tomorrow?|is|does|will
+Alex ___ married next month.|is getting|gets|get
+I'm tired. I ___ to bed now. Goodnight.|'m going|go|goes
+"Tina, are you ready yet?" "Yes, I ___."|'m coming|come|came
+My train ___ at 11.30. (timetable)|leaves|leave|is leave
+What time ___ the film start tonight?|does|is|do
+The meeting ___ at nine o'clock tomorrow.|is|does|are
+I ___ my new job on Monday.|start|am start|starts
+What time ___ you finish work tomorrow?|do|are|does
+What time ___ you meeting Kate tomorrow?|are|do|does
+I ___ an exam next week.|have|has|am have
+I've ___ an exam next week.|got|get|getting
+I'm leaving next week. I ___ my flight.|'ve booked|book|booking
+"Are you going to eat anything?" "No, I ___ hungry."|'m not|don't|not
+Sarah won the lottery. What ___ she going to do with the money?|is|does|are
+She ___ going to buy a new car.|'s|is be|are
+This cheese smells horrible. I ___ eat it.|'m not going to|don't going to|not going to
+"Your shoes are dirty." "I know. I ___ clean them."|'m going to|going to|will to
+Look at those black clouds! It ___ rain.|'s going to|go to|is go to
+I feel terrible. I think I ___ be sick.|'m going to|'m going|go to
+The economic situation is bad and things ___ get worse.|are going to|is going to|goes to
+We ___ travel by train, but then we decided to drive instead.|were going to|are going to|was going to
+I ___ just going to cross the road when somebody shouted "Stop!"|was|am|were
+I thought it ___ to rain, but it didn't.|was going|were going|is going
+I don't know what I ___ tomorrow. (I don't know my schedule)|'m doing|do|will doing
+I don't know what I ___ about the problem. (I haven't decided)|'m going to do|'m doing|do
+Steve ___ football next Saturday. He's hurt his leg.|isn't playing|doesn't plays|not play
+I ___ tomorrow, so we can go out somewhere.|'m not working|don't working|am not work
+We do not normally use ___ to talk about what we have arranged to do.|will|the present continuous|going to
+The train ___ at 8.15.|arrives|arrive|arriving
+What time ___ the next bus leave?|does|is|do
+What time ___ Emily this evening?|are you meeting|do you meet|you meet
+He isn't looking where he's going. He ___ walk into the wall.|'s going to|goes to|will to
+I'm just ___ make a quick phone call.|going to|go to|am go to
+We ___ a party tonight. The invitations are sent.|'re having|are have|has
+I don't want to stay here. Tomorrow I ___ look for somewhere else.|'m going to|going|will going
+The film ___ at 8.15.|starts|is start|start
+Ben's diary: He ___ tennis on Monday afternoon.|is playing|play|playing`},
+{id:'will',t:'Будущее: Will и Shall',d:'I’ll (решение сейчас), won’t, shall I/we, will и going to, will be doing, will have done.',q:`I left the door open. I ___ go and shut it.|'ll|'m|do
+"What would you like to drink?" "I ___ orange juice, please."|'ll have|have|am having
+"Did you call Max?" "Oh no, I forgot. I ___ him now."|'ll call|call|calls
+I'm a little hungry. I think I ___ something to eat.|'ll have|have|am having
+I don't think I ___ out tonight. I'm too tired.|'ll go|go|went
+I can see you're busy, so I ___ stay long.|won't|don't|am not
+I've tried to give her advice, but she ___ listen.|won't|doesn't|isn't
+The car ___ start. (it "refuses")|won't|doesn't|isn't
+___ you please turn the music down? It's too loud.|Will|Shall|Do
+"I ___ you at half past ten, OK?" "Fine. See you then."|'ll meet|meet|met
+___ I open the window? (= do you want me to open it?)|Shall|Will|Do
+I've got no money. What ___ I do?|shall|will|do
+"___ we go?" "Just a minute. I'm not ready yet."|Shall|Will|Are
+"Where ___ we have lunch?" "Let's go to Marino's."|shall|will|do
+___ you shut the door? (= I want you to shut it)|Will|Shall|Do
+___ I shut the door? (= do you want me to shut it?)|Shall|Will|Are
+Lisa ___ next week. (it's already arranged)|is working|will work|shall work
+___ you going to watch TV this evening?|Are|Will|Shall
+They've been away a long time. When they return, they ___ a lot of changes.|'ll find|find|found
+"Where ___ you be this time next year?" "I'll be in Japan."|will|shall|do
+That plate is hot. If you touch it, you ___ yourself.|'ll burn|burn|burned
+Anna looks completely different now. You ___ recognise her.|won't|don't|aren't
+I hope Kate ___ the driving test.|passes|will pass|is passing
+I hope it ___ tomorrow.|doesn't rain|won't rain|isn't raining
+Don't phone Amy now. She ___ busy.|'ll be|'s being|shall be
+She ___ be very angry. (not "shall")|will|shall|does
+The negative of shall is shall not or ___.|shan't|shalln't|shan
+Normally we use shall only with ___.|I and we|he and she|you and they
+"Gary has been trying to contact you." "Has he? OK, I ___ him."|'ll call|'m going to call|call
+"Gary has been trying to contact you." "Yes, I know. I ___ him."|'m going to call|'ll call|call
+"Anna is in hospital." "Really? I didn't know. I ___ her."|'ll visit|'m going to visit|visit
+"Anna is in hospital." "Yes, I know. I ___ her this evening."|'m going to visit|'ll visit|visit
+Look at those black clouds. It ___ rain.|'s going to|will|shall
+We ___ be late. The meeting starts in five minutes and it takes 15 minutes to get there.|'re going to|will|shall
+I think the weather ___ nice later.|will be|shall be|are
+This time next week I ___ on holiday.|'ll be|'ll have been|was
+Don't phone between 7 and 8. We ___ dinner.|'ll be eating|'ll eat|'ve eaten
+We're late. The film ___ already by the time we get to the cinema.|will have started|will start|has started
+Next year Ted and Amy ___ married for 25 years.|will have been|have been|had been
+Sally won't be at home at 9 o'clock. She ___ to work.|'ll have gone|'ll go|has gone`}
+];
+const $=s=>document.getElementById(s),A=$('app');
+const sh=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const parse=t=>t.q.split('\n').map(l=>{const p=l.split('|');return{s:p[0],a:p[1],o:p.slice(1)}});
+const EX={
+pres:{f:`Please be quiet. I ___ (try) to work.|am trying/'m trying
+Water ___ (boil) at 100 degrees Celsius.|boils
+Look! The baby ___ (sleep).|is sleeping/'s sleeping
+My brother ___ (not / like) coffee.|doesn't like/does not like
+How often ___ (you / go) to the dentist?|do you go
+The population of the world ___ (increase) very fast at the moment.|is increasing/'s increasing
+I ___ (not / understand) this word.|don't understand/do not understand`,x:`He don't like coffee.|He doesn't like coffee.
+What means this word?|What does this word mean?
+I am knowing the answer.|I know the answer.
+Is your English get better?|Is your English getting better?
+The earth is going round the sun.|The earth goes round the sun.`},
+perf:{f:`Tom can't find his key. He ___ (lose) it.|has lost/'s lost
+I ___ (never / be) to Canada.|have never been/'ve never been
+Have you ___ (see) Anna this morning?|seen
+It ___ (rain) every day since I arrived.|has rained/'s rained
+Paul is tired. He ___ (work) hard all day.|has been working/'s been working
+How long ___ (you / learn) English?|have you been learning
+I've written the email, but I haven't sent it ___.|yet`,x:`I have seen him yesterday.|I saw him yesterday.
+James is on holiday. He has been to Italy.|James is on holiday. He has gone to Italy.
+I am waiting for you since two hours.|I have been waiting for you for two hours.
+How long do you know Tom?|How long have you known Tom?
+We have been knowing each other for years.|We have known each other for years.`},
+past:{f:`We ___ (see) Alice in town a few days ago.|saw
+Yesterday I ___ (not / go) out because I was tired.|didn't go/did not go
+Matt phoned while we ___ (have) dinner.|were having
+When Sarah arrived, Paul ___ (already / go) home.|had already gone/'d already gone
+She ___ (study) for hours before the phone rang.|had been studying/'d been studying
+What ___ (you / do) at 10 o'clock last night?|were you doing
+They ___ (not / fly) before, so they were nervous.|hadn't flown/had not flown`,x:`Yesterday I have seen a great film.|Yesterday I saw a great film.
+When I arrived, the film already started.|When I arrived, the film had already started.
+I was knowing him very well.|I knew him very well.
+She had been studied for hours before the phone rang.|She had been studying for hours before the phone rang.
+I goed to the cinema last week.|I went to the cinema last week.`},
+fut:{f:`What ___ (you / do) tonight?|are you doing
+My train ___ (leave) at 11.30.|leaves
+Look at those black clouds! It ___ (rain).|is going to rain/'s going to rain
+I'm tired. I ___ (go) to bed now.|am going/'m going
+Alex ___ (get) married next month.|is getting/'s getting
+We ___ (travel) by train, but then we decided to drive.|were going to travel
+What time ___ (the film / start) tonight?|does the film start`,x:`Alex will get married next month.|Alex is getting married next month.
+I go to bed now.|I'm going to bed now.
+The film is starting at 8.15.|The film starts at 8.15.
+I thought it is going to rain, but it didn't.|I thought it was going to rain, but it didn't.
+We was going to travel by train.|We were going to travel by train.`},
+will:{f:`Oh, I left the door open. I ___ (go) and shut it.|'ll go/will go
+I can see you're busy, so I ___ (not / stay) long.|won't stay/will not stay
+I think I ___ (have) something to eat.|'ll have/will have
+___ we go? Just a minute, I'm not ready yet.|Shall
+This time next week I ___ (lie) on the beach.|will be lying/'ll be lying
+Next year they ___ (be) married for 25 years.|will have been/'ll have been
+The car ___ (not / start). It is refusing!|won't start/will not start`,x:`I'm very hungry. I think I have something to eat.|I'm very hungry. I think I'll have something to eat.
+She shall be very angry.|She will be very angry.
+I'll go on holiday next Saturday. I've booked the flight.|I'm going on holiday next Saturday. I've booked the flight.
+Lisa will work next week. It is in her diary.|Lisa is working next week. It is in her diary.
+Look at those black clouds. It will rain.|Look at those black clouds. It's going to rain.`}};
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let U=null,H=[];try{U=localStorage.getItem('gl_user')}catch(e){}
+const load=()=>{try{H=JSON.parse(localStorage.getItem('gl_hist_'+U)||'[]')}catch(e){H=[]}};
+const save=()=>{try{localStorage.setItem('gl_hist_'+U,JSON.stringify(H))}catch(e){}};
+const pct=(a,b)=>Math.round(a/b*100);
+const fq=s=>s.replace('___','<span class="bl"></span>');
+const nz=s=>s.replace(/can't/g,'cannot').replace(/won't/g,'will not').replace(/n't/g,' not').replace(/'m/g,' am').replace(/'re/g,' are').replace(/'ve/g,' have').replace(/'d/g,' had').replace(/'ll/g,' will').replace(/[^a-z0-9' ]/g,' ').replace(/\s+/g,' ').trim();
+const vs=s=>{const b=s.toLowerCase().replace(/[’`]/g,"'");return[nz(b.replace(/'s/g,' is')),nz(b.replace(/'s/g,' has'))]};
+const same=(u,a)=>{const y=vs(u);return a.split('/').some(e=>vs(e).some(k=>y.includes(k)))};
+function reg(){
+A.innerHTML=`<h1>Grammar Lab</h1><p class="s">Введите имя, чтобы результаты тестов сохранялись под ним.</p><div class="c"><label for="nm">Ваше имя</label><input id="nm" class="in" maxlength="30" autocomplete="given-name"><p id="er" style="color:var(--no);margin:8px 0 0"></p><p style="margin:12px 0 0"><button id="ok">Продолжить</button></p></div>`;
+const f=()=>{const v=$('nm').value.trim();if(v.length<2){$('er').textContent='Введите имя не короче двух символов.';return}U=v;try{localStorage.setItem('gl_user',U)}catch(e){}load();home()};
+$('ok').onclick=f;$('nm').onkeydown=e=>{if(e.key==='Enter')f()};$('nm').focus()}
+function home(){
+const my=id=>H.filter(h=>h.id===id),best=id=>my(id).reduce((m,h)=>Math.max(m,h.p),-1);
+const tot=H.length,avg=tot?Math.round(H.reduce((s,h)=>s+h.p,0)/tot):0;
+A.innerHTML=`<div class="row"><h1>Привет, ${esc(U)}!</h1><button class="o" id="cu">Сменить имя</button></div><p class="s">Пять тестов по 40 вопросов: выбор ответа, вставка слова и исправление ошибки. Результаты сохраняются под вашим именем в этом браузере.</p>
+<div class="g">${T.map((t,i)=>`<div class="c"><h3>${t.t}</h3><p>${t.d}</p><div class="row"><span>${best(t.id)<0?'Ещё не проходили':`Лучший результат: <b>${best(t.id)}%</b> · попыток: ${my(t.id).length}`}</span><button data-s="${i}">Начать тест</button></div></div>`).join('')}</div>
+<h2>Ваш прогресс</h2>
+<div class="st"><div class="c"><b>${tot}</b>попыток</div><div class="c"><b>${tot?avg+'%':'—'}</b>средний результат</div></div>
+${tot?`<h2>Последние попытки</h2><div class="c tw"><table><tr><th>Дата</th><th>Тест</th><th>Баллы</th><th>%</th></tr>${H.slice(-10).reverse().map(h=>`<tr><td>${h.d}</td><td>${T.find(t=>t.id===h.id).t.split(/ и /)[0].replace(/,.*/,'')}</td><td>${h.sc}/40</td><td>${h.p}%</td></tr>`).join('')}</table></div><p><button class="o" id="rs">Сбросить историю</button></p>`:'<p class="s">Пройдите первый тест, и здесь появится история результатов.</p>'}`;
+A.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>start(+b.dataset.s));
+$('cu').onclick=reg;
+const r=$('rs');if(r)r.onclick=()=>{if(confirm('Удалить всю историю результатов?')){H=[];save();home()}};
+window.scrollTo(0,0)}
+let cur,qs,ix,sc,wr;
+const L=(t,ty)=>t.split('\n').map(l=>{const p=l.split('|');return{s:p[0],a:p[1],ty}});
+let lastOk=true;
+const GR=[['#ffd9e8','#d9e8ff'],['#d9f5e6','#fff2c9'],['#e6dcff','#ffe0d6'],['#d6f0ff','#e9ffd9']];
+const MG=[['😎','ME AFTER GETTING','THE TENSE RIGHT'],['🎉','PRESENT PERFECT?','MORE LIKE PERFECTLY DONE'],['🧠','BIG BRAIN TIME','GRAMMAR ACTIVATED'],['🦸','I HAVE BEEN WINNING','ALL DAY LONG'],['😺','I WILL DO IT','AND I DID IT'],['🐸','YOU ARE ON FIRE','KEEP GOING']];
+const MB=[['😅','ME: I KNEW THIS','ALSO ME: I HAD FORGOTTEN'],['🙃','WHEN THE ANSWER WAS','RIGHT THERE'],['🥲','IT IS FINE','I AM LEARNING'],['🐢','SLOW AND STEADY','WINS THE TEST'],['🤔','PAST SIMPLE OR','PRESENT PERFECT?'],['💪','MISTAKES ARE HOW','WE LEARN']];
+function meme(ok){
+const m=sh(ok?MG:MB)[0],g=sh(GR)[0],id='g'+(Math.random()*1e6|0);
+const tx=(t,y)=>`<text x="200" y="${y}" text-anchor="middle" font-family="Impact,'Arial Black',sans-serif" font-weight="800" font-size="${Math.min(30,Math.floor(380/(t.length*.66)))}" fill="#fff" stroke="#3d3b4f" stroke-width="5" paint-order="stroke" stroke-linejoin="round">${t}</text>`;
+return `<svg viewBox="0 0 400 300" role="img" aria-label="${m[1]} ${m[2]}"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${g[0]}"/><stop offset="1" stop-color="${g[1]}"/></linearGradient></defs><rect width="400" height="300" fill="url(#${id})"/><text x="200" y="195" text-anchor="middle" font-size="130">${m[0]}</text>${tx(m[1],48)}${tx(m[2],282)}</svg>`}
+function mm(){
+A.innerHTML=`<div class="row"><b>${cur.t}</b><span>${ix+1} / ${qs.length}</span></div><div class="bar"><i style="width:${(ix+1)/qs.length*100}%"></i></div><div class="meme">${meme(lastOk)}</div><p class="s" style="text-align:center">${lastOk?'Nice one!':'No worries, keep going!'}</p><p style="text-align:center"><button id="g2">Дальше</button></p>`;
+$('g2').focus();$('g2').onclick=()=>{ix++;ask()};window.scrollTo(0,0)}
+function start(i){cur=T[i];const e=EX[cur.id];
+qs=sh([...sh(parse(cur)).slice(0,30),...sh(L(e.f,'f')).slice(0,6),...sh(L(e.x,'x')).slice(0,4)]);ix=0;sc=0;wr=[];ask()}
+function ask(){
+const q=qs[ix],ty=q.ty;
+const tag=ty==='f'?'Впишите недостающее слово или форму глагола':ty==='x'?'Найдите ошибку и перепишите предложение правильно':'Выберите правильный вариант';
+A.innerHTML=`<div class="row"><b>${cur.t}</b><span>${ix+1} / ${qs.length}</span></div><div class="bar"><i style="width:${ix/qs.length*100}%"></i></div>
+<p class="s" style="margin:0 0 6px">${tag}</p><p class="q">${fq(q.s)}</p>`+(ty?`<input id="in" class="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Ваш ответ"><p style="margin:12px 0 0"><button id="ck">Проверить</button></p><div id="fb"></div>`:`<div id="os">${sh(q.o).map(o=>`<button class="opt" data-o="${o.replace(/"/g,'&quot;')}">${o}</button>`).join('')}</div>`)+`<div id="nx"></div>`;
+if(ty){const i=$('in');i.focus();$('ck').onclick=()=>chk(q);i.onkeydown=e=>{if(e.key==='Enter')chk(q)}}
+else A.querySelectorAll('.opt').forEach(b=>b.onclick=()=>pick(b,q));
+window.scrollTo(0,0)}
+function nxt(){
+const last=ix===qs.length-1;
+$('nx').innerHTML=`<p><button id="go">${last?'Показать результат':'Дальше'}</button></p>`;
+$('go').focus();$('go').onclick=()=>{if(last)end();else if((ix+1)%3===0)mm();else{ix++;ask()}}}
+function pick(b,q){
+const ok=lastOk=b.dataset.o===q.a;
+A.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(x.dataset.o===q.a)x.classList.add('ok')});
+if(ok)sc++;else{b.classList.add('no');wr.push({s:q.s,a:q.a,p:b.dataset.o})}
+nxt()}
+function chk(q){
+const u=$('in').value.trim();if(!u)return;
+const ok=lastOk=same(u,q.a),a=q.a.split('/')[0];
+$('in').disabled=true;$('ck').remove();
+if(ok)sc++;else wr.push({s:q.s,a,p:u});
+$('fb').innerHTML=`<div class="m" style="background:${ok?'var(--okb)':'var(--nob)'}">${ok?'Верно!':'Неверно. Правильный ответ: <b>'+esc(a)+'</b>'}</div>`;
+nxt()}
+function end(){
+const p=pct(sc,qs.length);
+H.push({id:cur.id,sc,p,d:new Date().toLocaleDateString('ru-RU')});save();
+A.innerHTML=`<h1>${cur.t}</h1><div class="meme">${meme(p>=60)}</div><p class="big">${sc}/${qs.length}</p><p class="s">${esc(U)}, ${p}% правильных ответов · ${p>=85?'отличный результат':p>=60?'хорошо, но есть над чем поработать':'стоит повторить тему и попробовать снова'}</p>
+<p class="row" style="justify-content:flex-start"><button id="ag">Пройти ещё раз</button><button class="o" id="hm">К списку тестов</button></p>
+${wr.length?`<h2>Разбор ошибок (${wr.length})</h2>${wr.map(w=>`<div class="m">${fq(w.s)}<br>Ваш ответ: <s>${esc(w.p)}</s> · Верно: <b>${esc(w.a)}</b></div>`).join('')}`:'<h2>Без ошибок!</h2>'}`;
+$('ag').onclick=()=>start(T.indexOf(cur));$('hm').onclick=home;window.scrollTo(0,0)}
+U?(load(),home()):reg();
+</script></body></html>
